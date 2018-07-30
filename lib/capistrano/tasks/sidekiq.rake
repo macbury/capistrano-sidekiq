@@ -254,7 +254,7 @@ namespace :sidekiq do
     else
       args.push '--daemon'
     end
-
+    binding.pry
     execute :sidekiq, args.compact.join(' ')
   end
 
